@@ -1,12 +1,12 @@
 /*!
-  * @vogter/vue3-axios v0.0.1
+  * @vogter/vue3-axios v0.0.2
   * (c) 2021 @vogter/vue-axios axios's extend
   * @license MIT
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('axios'), require('lodash')) :
   typeof define === 'function' && define.amd ? define(['axios', 'lodash'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.GuardianVueAxios = factory(global.axios, global._));
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.VogterVueAxios = factory(global.axios, global._));
 }(this, (function (axios, _) { 'use strict';
 
   function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e['default'] : e; }

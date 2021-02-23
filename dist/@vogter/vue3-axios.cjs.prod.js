@@ -1,5 +1,5 @@
 /*!
-  * @vogter/vue3-axios v0.0.1
+  * @vogter/vue3-axios v0.0.2
   * (c) 2021 @vogter/vue-axios axios's extend
   * @license MIT
   */

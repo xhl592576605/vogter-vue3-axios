@@ -31,7 +31,7 @@ const outputConfigs = {
   umd: {
     file: pkg.umd,
     format: `umd`,
-    name: 'GuardianVueAxios'
+    name: 'VogterVueAxios'
   },
   global: {
     file: pkg.unpkg,
@@ -80,7 +80,7 @@ function createConfig (format, output, plugins = []) {
   const isNodeBuild = format === 'cjs'
   const isBundlerESMBuild = /esm-bundler/.test(format)
 
-  if (isGlobalBuild) output.name = 'GuardianVueAxios'
+  if (isGlobalBuild) output.name = 'VogterVueAxios'
 
   const shouldEmitDeclarations = !hasTSChecked
 

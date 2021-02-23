@@ -1,6 +1,6 @@
 {
   "name": "@vogter/vue3-axios",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vogter's axios(vue)",
   "main": "dist/vogter-vue3-axios.cjs.js",
   "unpkg": "dist/vogter-vue3-axios.global.js",

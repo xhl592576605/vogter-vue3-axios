@@ -1,9 +1,9 @@
 /*!
-  * @vogter/vue3-axios v0.0.1
+  * @vogter/vue3-axios v0.0.2
   * (c) 2021 @vogter/vue-axios axios's extend
   * @license MIT
   */
-var GuardianVueAxios = (function (axios, _) {
+var VogterVueAxios = (function (axios, _) {
   'use strict';
 
   function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e['default'] : e; }
