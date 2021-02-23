@@ -7,12 +7,12 @@ const install = (app: any, options: any) => {
   Object.entries(utilObj).forEach(([key, value]) => {
     app.config.globalProperties[key] = value
   })
-  if (!window.$guardian) {
-    window.$guardian = {}
+  if (!window.$vogter) {
+    window.$vogter = {}
   }
-  window.$guardian.$apiService = new ApiService()
+  window.$vogter.$apiService = new ApiService()
   utilObj.$loadConfig('/api.json').then(res => {
-    window.$guardian.$service_config = res
+    window.$vogter.$service_config = res
   })
   app.mixin(new mixins(app))
 }

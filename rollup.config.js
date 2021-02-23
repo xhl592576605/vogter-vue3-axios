@@ -10,7 +10,7 @@ const name = pkg.name
 
 const banner = `/*!
   * ${pkg.name} v${pkg.version}
-  * (c) ${new Date().getFullYear()} @guardian/vue-axios axios's extend
+  * (c) ${new Date().getFullYear()} @vogter/vue-axios axios's extend
   * @license MIT
   */`
 

@@ -1,23 +1,23 @@
 {
-  "name": "@guardian/vue3-axios",
+  "name": "@vogter/vue3-axios",
   "version": "0.0.1",
-  "description": "guardian's axios(vue)",
-  "main": "dist/guardian-vue3-axios.cjs.js",
-  "unpkg": "dist/guardian-vue3-axios.global.js",
-  "jsdelivr": "dist/guardian-vue3-axios.global.js",
-  "module": "dist/guardian-vue3-axios.esm-bundler.js",
-  "umd": "dist/guardian-vue3-axios.umd.js",
-  "types": "dist/guardian-vue3-axios.d.ts",
+  "description": "Vogter's axios(vue)",
+  "main": "dist/vogter-vue3-axios.cjs.js",
+  "unpkg": "dist/vogter-vue3-axios.global.js",
+  "jsdelivr": "dist/vogter-vue3-axios.global.js",
+  "module": "dist/vogter-vue3-axios.esm-bundler.js",
+  "umd": "dist/vogter-vue3-axios.umd.js",
+  "types": "dist/vogter-vue3-axios.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c rollup.config.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xhl592576605/guardian-vue3-axios.git"
+    "url": "git+https://github.com/xhl592576605/vogter-vue3-axios.git"
   },
   "keywords": [
-    "guardian",
+    "vogter",
     "api",
     "axios",
     "接口请求"
@@ -29,9 +29,9 @@
   "author": "hans",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xhl592576605/guardian-vue3-axios/issues"
+    "url": "https://github.com/xhl592576605/vogter-vue3-axios/issues"
   },
-  "homepage": "https://github.com/xhl592576605/guardian-vue3-axios#readme",
+  "homepage": "https://github.com/xhl592576605/vogter-vue3-axios#readme",
   "devDependencies": {
     "@rollup/plugin-alias": "^3.1.2",
     "@rollup/plugin-commonjs": "^16.0.0",

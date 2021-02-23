@@ -1,4 +1,4 @@
-## @guardian/vue3-axios (守卫者[接口框架])
+## @vogter/vue3-axios (守卫者[接口框架])
 
 ### 框架特点
 
@@ -84,8 +84,8 @@ export default defineComponent({
 - 使用示例
 ``` js
 // in main.js(.ts)
-import GuardianVueAxios from '@guardian/vue-axios'
-createApp(App).use(GuardianVueAxios).mount('#app')
+import VogterVueAxios from '@vogter/vue-axios'
+createApp(App).use(VogterVueAxios).mount('#app')
 ```
 
 - api.json

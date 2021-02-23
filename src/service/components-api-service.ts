@@ -15,7 +15,7 @@ export default class ComponentsApiService {
    */
   static $getAppPropsMustValue(key: string) {
     if (!Reflect.has(ComponentsApiService.__app__.$props, key)) {
-      console.error(`[@guardian/vue3-axios] use ComponentsApiService's components must  has [${key}] props `)
+      console.error(`[@vogter/vue3-axios] use ComponentsApiService's components must  has [${key}] props `)
     }
     return Reflect.get(ComponentsApiService.__app__.$props, key)
   }
@@ -231,7 +231,7 @@ export default class ComponentsApiService {
     }
     const api = ComponentsApiService.$getAppPropsValue('api')
     if (!api || api.length == 0) {
-      console.warn(`[@guardian/vue3-axios] please in components set api props`)
+      console.warn(`[@vogter/vue3-axios] please in components set api props`)
       return
     }
     // use app '$clearData' to clear data
@@ -440,7 +440,7 @@ export default class ComponentsApiService {
     let params = {}
     const app = ComponentsApiService.__app__
     params = _.merge(params, {
-      isGuardianAxios: true
+      isvogterAxios: true
     })
     const { filter, myFilter } = app
     _.merge(params, filter, myFilter)

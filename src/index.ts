@@ -1,5 +1,5 @@
 import install from './install'
-const GuardianVueAxios = {
+const VogterVueAxios = {
   install
 }
-export default GuardianVueAxios
+export default VogterVueAxios

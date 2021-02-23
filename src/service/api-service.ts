@@ -96,7 +96,7 @@ export default class ApiService {
           return config
         },
         (error: any) => {
-          console.warn('[@guardian/vue3-axios] 发起接口请求出现异常！')
+          console.warn('[@vogter/vue3-axios] 发起接口请求出现异常！')
           console.warn(error)
           return Promise.reject(error)
         }
@@ -211,12 +211,12 @@ export default class ApiService {
       [
         this._myServiceConfig || {},
         // @ts-ignore
-        window.$guardian.$service_config || {}
+        window.$vogter.$service_config || {}
       ],
       0
     )
     if (!options) {
-      console.warn(`[@guardian/vue3-axios] api.json配置例子：\n
+      console.warn(`[@vogter/vue3-axios] api.json配置例子：\n
         {
             "system": {
               "system": {
@@ -241,7 +241,7 @@ export default class ApiService {
       apiOpt
     )
     //@ts-ignore
-    const { debug } = window.$guardian || {}
+    const { debug } = window.$vogter || {}
     // 判断是否启用debug模式
     if (debug) {
       opt.params.debug = true
@@ -267,7 +267,7 @@ export default class ApiService {
       apiOpt
     )
     //@ts-ignore
-    const { debug } = window.$guardian || {}
+    const { debug } = window.$vogter || {}
     // 判断是否启用debug模式
     if (debug) {
       (opt.params as any).debug = true
