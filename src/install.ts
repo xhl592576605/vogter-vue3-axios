@@ -11,7 +11,7 @@ const install = (app: any, options: any) => {
     window.$vogter = {}
   }
   window.$vogter.$apiService = new ApiService()
-  utilObj.$loadConfig('/api.json').then(res => {
+  utilObj.$loadConfig(options.apiPath || '/api.json').then(res => {
     window.$vogter.$service_config = res
   })
   app.mixin(new mixins(app))

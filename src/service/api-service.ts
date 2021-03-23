@@ -241,9 +241,9 @@ export default class ApiService {
       apiOpt
     )
     //@ts-ignore
-    const { debug } = window.$vogter || {}
+    const { apiDebug } = window.$vogter || {}
     // 判断是否启用debug模式
-    if (debug) {
+    if (apiDebug) {
       opt.params.debug = true
     }
     const promise = service(opt)
@@ -267,9 +267,9 @@ export default class ApiService {
       apiOpt
     )
     //@ts-ignore
-    const { debug } = window.$vogter || {}
+    const { apiDebug } = window.$vogter || {}
     // 判断是否启用debug模式
-    if (debug) {
+    if (apiDebug) {
       (opt.params as any).debug = true
     }
     const promise = service(opt)

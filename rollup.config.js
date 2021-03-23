@@ -10,7 +10,7 @@ const name = pkg.name
 
 const banner = `/*!
   * ${pkg.name} v${pkg.version}
-  * (c) ${new Date().getFullYear()} @vogter/vue-axios axios's extend
+  * (c) ${new Date().getFullYear()} @vogter/vue3-axios axios's extend
   * @license MIT
   */`
 
@@ -31,7 +31,6 @@ const outputConfigs = {
   umd: {
     file: pkg.umd,
     format: `umd`,
-    name: 'VogterVueAxios'
   },
   global: {
     file: pkg.unpkg,
@@ -76,11 +75,15 @@ function createConfig (format, output, plugins = []) {
 
   const isProductionBuild = /\.prod\.js$/.test(output.file)
   const isGlobalBuild = format === 'global'
+  const isUmdBuild = format === 'umd'
   const isRawESMBuild = format === 'esm'
   const isNodeBuild = format === 'cjs'
   const isBundlerESMBuild = /esm-bundler/.test(format)
 
   if (isGlobalBuild) output.name = 'VogterVueAxios'
+  if (isUmdBuild) output.name = 'VogterVueAxios'
+
+
 
   const shouldEmitDeclarations = !hasTSChecked
 
@@ -104,7 +107,6 @@ function createConfig (format, output, plugins = []) {
 
   const external = [
     'vue',
-    'axios',
     'lodash'
   ]
 
